@@ -51,7 +51,7 @@ public int binarySearch(int catNumToFind)
     return store[guess].getInventory();
   else if(store[guess].getCatNum() < catNumToFind)
    low = guess + 1;
-  else // a[guess] > target
+  else // store[guess].getCatNum() > target
    high = guess - 1;
   }    
   return -1;
